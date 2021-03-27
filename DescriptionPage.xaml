@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Base21.Page1"
+             Title="DescProd"
+             Icon="iconShop.png"
+              NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            
+             <Button x:Name="btnBack" HorizontalOptions="StartAndExpand"  BackgroundColor="White" BorderRadius="100"  Text="Back" TextColor="#8BC34A" FontSize="17" FontAttributes="Bold" Margin="15"/>
+            <ImageButton  HorizontalOptions="EndAndExpand" Source="https://img.favpng.com/1/0/19/shopping-cart-logo-grocery-store-png-favpng-Ch95Hxwf72xDpPbZbmv87T8m8.jpg" WidthRequest="50" />
+            <Label  FontSize="30" HorizontalOptions="Center" Text="iPhone12 Pro Max" Margin="50" TextColor="Black"/>
+            <StackLayout Margin="5">
+
+                <Image Source="https://images-na.ssl-images-amazon.com/images/I/61GggH1hAaL._AC_SY450_.jpg"/>
+                <Label Text="Al comprarlo con un plan kölbi postpago obtendrás:
+Más GIGAS de Internet.
+La red más veloz con la mejor experiencia de video. 
+APPS GRATIS sin consumir los Gigas de tu plan.
+Acceso a la mejor red 4.5G de acuerdo con la capacidad de cada teléfono*" Margin="20"/>
+            
+            <Picker Title="Seleccione un Plan Postpago"
+        TitleColor="Green"
+        FontSize="15">
+                <Picker.Items>
+                    <x:String>8 Meses</x:String>
+                    <x:String>12 Meses</x:String>
+                    <x:String>24 Meses</x:String>
+                </Picker.Items>
+            </Picker><Picker Title="Seleccione una Memoria"
+        TitleColor="Green"
+        FontSize="15">
+                <Picker.Items>
+                    <x:String>32 GB</x:String>
+                        <x:String>64 GB</x:String>
+                        <x:String>128 GB</x:String>
+                </Picker.Items>
+            </Picker><Picker Title="Seleccione un color"
+        TitleColor="Green"
+        FontSize="15">
+                <Picker.Items>
+                    <x:String>Rojo</x:String>
+                        <x:String>Negro</x:String>
+                        <x:String>Blanco</x:String>
+                </Picker.Items>
+            </Picker>
+
+            </StackLayout>
+            <Button x:Name="btnCarrito" Text="Agregar al Carrito" TextColor="White" BackgroundColor="Turquoise"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
